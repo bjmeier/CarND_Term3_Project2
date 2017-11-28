@@ -146,8 +146,6 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
             print("epoch = {}  step = {}  loss = {}".format(epoch, step, xel))
             step = step+1
         pass
-        save_file = './model'+str(epoch)+'/ckpt'
-        saver.save(sess, save_file)
     pass
 tests.test_train_nn(train_nn)
 
@@ -165,7 +163,6 @@ def run():
     # OPTIONAL: Train and Inference on the cityscapes dataset instead of the Kitti dataset.
     # You'll need a GPU with at least 10 teraFLOPS to train on.
     #  https://www.cityscapes-dataset.com/
-    saver = tf.train.Saver()
     with tf.Session() as sess:
         # Path to vgg model
         vgg_path = os.path.join(data_dir, 'vgg')
