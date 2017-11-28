@@ -128,7 +128,7 @@ def train_nn(sess, epochs, batch_size, get_batches_fn, train_op, cross_entropy_l
     :param keep_prob: TF Placeholder for dropout keep probability
     :param learning_rate: TF Placeholder for learning rate
     """
-    saver = tf.train.Saver()
+    saver = tf.train.Saver(sess)
     KEEP_PROB = 0.5
     LEARNING_RATE= 3e-4
     # TODO: Implement function
