@@ -173,8 +173,8 @@ def run():
         #  https://datascience.stackexchange.com/questions/5224/how-to-prepare-augment-images-for-neural-network
 
         	# DEFINE correct_label
-        epochs = 4
-        batch_size = 6
+        epochs = 30
+        batch_size = 4
         correct_label = tf.placeholder(tf.float32, [None, image_shape[0], image_shape[1], num_classes])
         learning_rate = tf.placeholder(tf.float32)
 
