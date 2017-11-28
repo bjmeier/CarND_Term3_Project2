@@ -1,3 +1,4 @@
+
 # CarND_Term3_Project2
 Semantic Segmentation
 
@@ -8,6 +9,7 @@ Repository contains:
 - helper.py: Helper functions.
 - Project_tests.py: Error tests.
 - Runs folder:  Output from main.py.  Run on p2.xlarge AWS EC2 instance of the udacity deep learning AMI.
+- Final runs folder: ./runs/1511841860.0203218
 
 Solution based on the below papers and code.
 
